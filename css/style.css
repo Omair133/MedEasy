@@ -1,0 +1,66 @@
+*{
+	margin:0;
+}
+ul{
+	padding:0;
+	list-style-type: none;
+}
+.row{
+	margin:0 !important;
+}
+.logo, .nav-bar-contents{
+	display:table;
+	margin:15px auto;
+}
+.logo img{
+	width:200px;
+}
+.nav-bar li{
+	float:right;
+	margin-right:30px;
+}
+.nav-bar li:nth-child(1){
+	margin-right:0;
+}
+a{
+	text-decoration: none;
+}  
+li a:hover{
+	text-decoration: none;
+}
+.nav-bar li a{
+	color:#fff;
+	text-transform: uppercase;
+	transition: 0.2s ease-in-out;
+	padding:10px;
+}
+.nav-bar li a:hover{
+	color:seagreen;
+	background:#fff;
+}
+.nav-bar{
+	background:seagreen;
+}
+
+/* -----------------------Section---------Section-------------*/
+
+.ban-text h1{
+	color:seagreen;
+	font-size:55px;
+}
+.ban-text h1 span{
+	color:#cea234;
+	animation: move 2s;
+}
+@keyframes move{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity:100%;
+	}
+}
+.banner{
+	background:url(images/appointment.jpg);
+	background-size:cover;
+}

@@ -1,0 +1,187 @@
+*{
+	margin:0;
+}
+ul{
+	padding:0;
+	list-style-type: none;
+}
+.row{
+	margin:0 !important;
+}
+.logo, .nav-bar-contents{
+	display:table;
+	margin:15px auto;
+}
+.logo img{
+	width:200px;
+}
+.nav-bar li{
+	float:right;
+	margin-right:30px;
+}
+.nav-bar li:nth-child(1){
+	margin-right:0;
+}
+a{
+	text-decoration: none;
+}  
+li a:hover{
+	text-decoration: none;
+}
+.nav-bar li a{
+	color:#fff;
+	text-transform: uppercase;
+	transition: 0.2s ease-in-out;
+	padding:10px;
+}
+.nav-bar li a:hover{
+	color:seagreen;
+	background:#fff;
+}
+.nav-bar{
+	background:seagreen;
+}
+
+/* -----------------------Section---------Section-------------*/
+
+.ban-text h1{
+	color:seagreen;
+	font-size:55px;
+}
+.ban-text h1 span{
+	color:#fff;
+	animation: move 2s;
+}
+@keyframes move{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity:100%;
+	}
+}
+.banner{
+	background:
+		linear-gradient(
+			rgba(110, 103, 103, 0.45), 
+      	rgba(110, 103, 103, 0.45)
+      ),
+
+		url(images/appointment.jpg);
+	background-size:cover;
+	padding:70px 0;
+}
+.seller-login h4{
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+}
+input[type="text"], input[type="password"], input[type="number"]{
+	width:100%;
+	padding:15px;
+	border:none;
+	font-size:15px;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+	outline:none;
+	background:#f4f1f1f1;
+}
+input[type="submit"], input[type="button"]{
+	width:100%;
+	text-align:center;
+	border:none;
+	padding:15px;
+	background:#cea234;
+	border:1px solid #cea234;
+	color:#fff;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+input[type="submit"]:focus, input[type="button"]:focus{
+	outline:none;
+}
+input[type="submit"]:hover, input[type="button"]:hover{
+	background:#fff;
+	color:seagreen;
+	border:1px solid seagreen;
+}
+
+/*---------Seller Dashboard----------------Seller Dashboard--------------*/
+
+.product{
+	display:table;
+	margin:30px auto 30px;
+	width:35%;
+}
+.product h3{
+	text-align:center;
+	margin: 0 auto 20px auto;
+}
+.product input[type="text"], .product input[type="number"]{
+	background:#efeded;
+}
+.product input[type="text"]:focus, .product input[type="number"]:focus{
+	background:#e6e3e3;
+}
+#product-list{
+	display:table;
+	margin:0 auto;
+}
+#product-list table, #product-list td, #product-list th{
+	border:1px solid seagreen;
+	padding:10px;
+}
+th{
+	background:#efeded;
+}
+.editData > input{
+	width:auto;
+	border:1px solid #000;
+	padding:10px;
+	margin-right:5px;
+}
+.editData > input[type="button"]{
+	border:none;
+	position:relative;
+}
+.editData{
+	display: table;
+	margin:20px auto;
+	transform:scale(1,0);
+	transition: 0.4s ease-in-out;
+	transform-origin: top;
+}
+.editData > label{
+	position: absolute;
+    top: -22px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+.profile{
+	position:relative;
+}
+.profile:hover .subprofile{
+	transform: scale(1,1);
+}
+.subprofile{
+	position:absolute;
+	font-size:14px;
+	border:1px solid seagreen;
+	top:40px;
+	color:green;
+	transform:scale(1,0);
+	transform-origin: top;
+	transition: 0.3s ease-in-out;
+}
+.subprofile > a{
+	color:seagreen !important;
+	font-size:15px;
+	margin: 5px 0;
+	
+}
+.subprofile > a:hover{
+	background:transparent !important;
+	padding:0 10px !important;
+}
